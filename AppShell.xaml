@@ -9,9 +9,9 @@
     xmlns:info="clr-namespace:Microsoft.Maui.ApplicationModel;assembly=Microsoft.Maui.Essentials"
     Title="ShopApp2">
 
+
     <Shell.FlyoutHeader>
         <Image Source="tux.png" WidthRequest="128" Margin="18">
-            
         </Image>
     </Shell.FlyoutHeader>
 
@@ -30,7 +30,7 @@
     <FlyoutItem Title="Configuración">
         <Tab Title="Resumen">
             <ShellContent
-         Title="Dara System"
+         Title="Data System"
          ContentTemplate="{DataTemplate views:MainPage}"
          Route="MainPage" />
         </Tab>

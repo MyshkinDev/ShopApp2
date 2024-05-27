@@ -7,6 +7,7 @@ namespace ShopApp2.DataAcces
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Client> Clients { get; set; }
+        //public DbSet<Compra> Compras { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -50,5 +51,7 @@ namespace ShopApp2.DataAcces
     }
 
     public record Client(int Id, string Nombre, string Direccion);
+
+    public record Compra(int ClientId, int ProductId, int Cantildad);
 
 }
